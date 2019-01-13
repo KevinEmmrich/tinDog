@@ -1,2 +1,1 @@
-# tinDog
-Sample responsive web site
+TinDog Starting Files

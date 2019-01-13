@@ -1,0 +1,282 @@
+/************************ Tag Selectors -- Global ************************/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align:center;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-family: 'Montserrat-Bold', sans-serif;
+
+}
+/* Probably should move these p proerties to a p-pricing class: only place <p> is used by itself. */
+p {
+  color: #8f8f8f;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width:1000px)
+{
+  p {
+    font-size: 1.0rem;
+  }
+}
+
+/************************* Global  ************************/
+.container-fluid {
+  padding: 3% 15%;
+}
+
+.back-to-top
+{
+margin-top: 0;
+float: right;
+}
+
+.alternating-section-1{
+  background-color: #ff4c68;
+  color: ivory;
+}
+.alternating-section-2{
+  background-color: #fff;
+  color: black;
+}
+
+.header-big {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+
+}
+@media (max-width:1000px)
+{
+  .header-big {
+    font-size: 2rem;
+    text-align:center;
+
+  }
+}
+
+/************************* Nav-Bar Section ************************/
+.navbar {
+  padding: 0 0 4rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem; }
+
+
+.nav-link {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  font-family: "Montserrat-Light", sans-serif;
+}
+
+/* .nav-item {
+
+} */
+
+/************************* Title Section ************************/
+#title {
+  text-align:left;
+  font-weight: bolder;
+  /*position: relative; */
+}
+
+.iphone {
+  /* margin-top: 100px; */
+  width: 45%;
+  transform: rotate(25deg);
+  margin-left: 10rem;
+  margin-bottom: 3rem;
+  position: absolute;
+  right: 20%
+  /* to put the iphone down and partially covered by features Section we have many ways to do it:
+  1.) title relative, iphone absoloute and features relative and use z-index 1,2,3
+  2.) title: none , iphone: absoloute , features: relative z-order=1*/
+}
+
+@media (max-width:1000px )
+{
+  .iphone {
+    transform: rotate(0);
+    position: static;
+    margin-right: auto;
+    margin-left: 25%;
+  }
+
+}
+
+.download-button {
+  margin: 5% 0 5% 10%;
+}
+@media (max-width:1000px )
+{
+  .download-button {
+  font-size: 1rem;
+  }
+}
+
+/************************* Features Section ************************/
+#features {
+  padding: 5% 12%;
+  position:relative ;
+  /* z-index: 1 ;  -- hmmm not needed, see order flow chart*/
+  /* margin-top: 3rem;
+  margin-bottom: 5rem; */
+}
+
+.h3-features{
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+.features-icons {
+  color: #ef8172;
+  /* font-size: 3rem; -- now setting as -4x setting*/
+  /* text-align: center;
+  position: relative;
+  margin-left: 0 auto; */
+  margin-bottom: 1rem;
+}
+
+.features-icons:hover {
+  color: #ff4c68;
+}
+
+.features-p {
+  /* text-align: center; */
+  color: #8f8f8f;
+  /* margin-bottom: 1rem; */
+  padding: 1rem 0;
+}
+
+/************************* testimonials Section ************************/
+#testimonials {
+  background-color:#ef4c68;   /* override section settings*/
+  text-align: center;
+  /* padding-top:  2rem;
+  padding-bottom: 2rem; */
+}
+
+.h2-testimonials {
+  font-size: 3rem;
+  line-height: 1.5;
+  width: 50%;
+  margin: 0 auto 0 auto;
+  font-weight: bolder;
+}
+@media (max-width:1000px)
+{
+  .h2-testimonials {
+    font-size: 1.5rem;
+  }
+}
+
+.testimonial-image {
+  height: 15%;
+  width: 15%;
+  border-radius: 100%;
+  margin: 20px;
+  /* padding: 2rem auto 2rem auto; */
+  /* margin-left:40%; */
+}
+
+.carousel-item {
+  padding: 3% 12%;
+}
+
+/************************* Press Section ************************/
+#press {
+  background-color:#ef4c68;   /* override section settings*/
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-img {
+  width: 15%;
+  padding: 3%;
+}
+
+/************************* Pricing Section ************************/
+#pricing {
+  text-align: center;
+}
+.container-pricing{
+  padding: 4rem;
+}
+
+.pricing-col {
+  text-align: center;
+  padding: 3% 2%;
+}
+
+
+.h2-pricing {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+@media (max-width:1000px)
+{
+  .h2-pricing {
+    font-size: 1.5rem;
+  }
+}
+/************************* Call to action Section ************************/
+#cta {
+/* background-color: #ff4c68;
+  color: ivory; */
+  text-align: center;
+  /* padding-top: 3%;
+  padding-bottom: 3%; */
+}
+
+.cta-h1 {
+  font-family: 'Montserrat-Black', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+  width: 50%;
+  margin:0 auto 0 auto;
+}
+@media (max-width:1000px)
+{
+  .cta-h1{
+    font-size: 1.5rem;
+  }
+}
+
+.download-button-2{
+      margin: 2% 3% 3% 0;
+}
+/************************* Footer ************************/
+#footer{
+/* no background color set? */
+  /* color: ivory; */
+  text-align: center;
+  /* padding-top:  2rem;
+  padding-bottom: 2rem; */
+}
+
+.footer-icons {
+  color: black;
+  margin-right:1rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  margin-left:1rem;
+  text-align:center;
+}
+
+.p-footer {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
